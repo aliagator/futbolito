@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <!--Formulario para resetear la contraseña-->
+    <div class="forgotbox">
+        <img src="mushroom.jpg" alt="goal" style="width:280;height:140px;">
+        </br>
+        <h1 class="cabeza">¿OLVIDO SU CONTRASEÑA?</h1>
+        </br>
+        <p>
+        <form onsubmit="return validarForgot()">
+            <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail">
+            </li>
+            </br>
+            <button type="submit" name="" value="reset" disabled>Resetear contraseña</button>
+        </form>
+            <p>
+            <p><a href="forgot.html">¿Olvidaste tu contraseña?</a>
+            <p><a href="login.html">¿Ya tienes cuenta? Inicia sesión</a>
+    </div>
+    <script src="validarForgot.js"></script>
+</body>
+</html>
