@@ -1,10 +1,14 @@
+<?php 
+  $rootPath = $config["app_root_url"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="<?php echo $config["app_root_url"] . "css/estilos.css" ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo "$rootPath/css/estilos.css" ?>">
 </head>
 <body>
     <nav><ul id="navegador">
@@ -21,35 +25,35 @@
       <div class="column">
         <div class="card">
           <h3>Posición</h3>
-          <img class="avatarito" src="ranking.png" alt="" width="50" height="50"></img>
+          <img class="avatarito" src="<?php echo "$rootPath/assets/ranking.png" ?>" alt="" width="50" height="50"></img>
         </div>
       </div>
     
       <div class="column">
         <div class="card">
           <h3>Partidos Ganados</h3>
-          <img class="avatarito" src="winner.jpg" alt="" width="50" height="50"></img>
+          <img class="avatarito" src="<?php echo "$rootPath/assets/winner.jpg" ?>" alt="" width="50" height="50"></img>
         </div>
       </div>
       
       <div class="column">
         <div class="card">
           <h3>Partidos Perdidos</h3>
-          <img class="avatarito" src="sad.png" alt=""width="50" height="50"></img>
+          <img class="avatarito" src="<?php echo "$rootPath/assets/sad.png" ?>" alt=""width="50" height="50"></img>
         </div>
       </div>
 
       <div class="column">
         <div class="card">
           <h3>Partidos Empatados</h3>
-          <img class="avatarito" src="igual.png" alt=""width="50" height="50"></img>
+          <img class="avatarito" src="<?php echo "$rootPath/assets/igual.png" ?>" alt=""width="50" height="50"></img>
         </div>
       </div>
 
       <div class="column">
         <div class="card">
           <h3>Puntos</h3>
-          <img class="avatarito" src="soccer_ball.png" alt=""width="50" height="50"></img>
+          <img class="avatarito" src="<?php echo "$rootPath/assets/soccer_ball.png" ?>" alt=""width="50" height="50"></img>
         </div>
       </div>
 
@@ -59,13 +63,13 @@
       <div class="column">
           <div class="card">
           <h3>Goles por partido</h3>
-            <img src="equipo.jpg" alt=""width="108" height="108"></img>
+            <img src="<?php echo "$rootPath/assets/equipo.jpg" ?>" alt=""width="108" height="108"></img>
           </div>
       </div>
         <div class="column">
         <div class="card">
           <h3>Goles por jugador</h3>
-          <img src="soccer-player.jpg" alt=""width="108" height="108"></img>
+          <img src="<?php echo "$rootPath/assets/soccer-player.jpg" ?>" alt=""width="108" height="108"></img>
         </div>
       </div>
       <div class="column">

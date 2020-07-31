@@ -3,8 +3,7 @@ const validarRegister = () => {
     let name, apellidos, mail, nickname, password, confirm_password, expresion, letras, conPass;
     name = $("#name").val();
     apellidos = $("#apellidos").val();
-    mail = $("#mail").val();
-    nickname = $("#nickname").val();
+    mail = $("#mail").val();    
     password = $("#password").val();
     confirm_password = $("#confirm_password").val();
     expresion = /\w+@\w+\.+[a-z]/;
@@ -14,8 +13,7 @@ const validarRegister = () => {
     /* Obligatoriedad de los campos de registro*/
     if(name == null || name.length == 0 || 
         apellidos == null || apellidos.length  == 0 || 
-        mail == null || mail.length == 0 || 
-        nickname == null || nickname.length == 0 || 
+        mail == null || mail.length == 0 ||         
         password == null || password.length == 0 || 
         confirm_password == null || confirm_password.length == 0 ){
         alert("todos los campos son obligatorios");
@@ -38,12 +36,7 @@ const validarRegister = () => {
     else if(apellidos.length<2 || apellidos.length>75){
         alert("el apellido debe ser entre  2 y 75 carcateres");
         return false;
-    }
-    /* condiciones del nickname */
-    else if(nickname.length<6 || nickname.length>12){
-        alert("el nickname debe ser entre  6 y 12 carcateres");
-        return false;
-    }
+    }    
     /* condiciones del correo electronico */
     else if(!expresion.test(mail)){
         alert("El email debe ser una dirección válida");

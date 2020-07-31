@@ -41,7 +41,7 @@ include("./utils/config.php");
                         <!--Link para restrablecer contraseña-->
                         <p><a href="forgot.html">¿Olvidaste tu contrase&ntilde;a?</a>
                         <!--Link para registrarse-->
-                        <p><a href="register.html">Registrese</a>                        
+                        <p><a href="<?php echo $config["app_root_url"] . "register.php"?>">Registrese</a>                        
                 </form>
             </div>
         <p>
